@@ -8,9 +8,9 @@ class Button extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <button className='button' onClick={this.props.onClick}>
+            <div className='button' onClick={this.props.onClick}>
                 {this.props.text}
-            </button>
+            </div>
              </React.Fragment>
         );
     }
