@@ -52,27 +52,13 @@ class Calculator extends React.Component {
         if (bmi >= 30) return 'Obese';
     }
 
-    // calculateBmi = () => {
-    //     let bmi = ((this.state.weight / this.state.height / this.state.height) * 10000).toFixed(1);
-    //     if (bmi < 18.5) return 'Underweight';
-    //     if (bmi >= 18.5 && bmi <= 24.9) return 'Normal Weight';
-    //     if (bmi >= 25 && bmi <= 29.9) return 'Overweight';
-    //     if (bmi >= 30) return 'Obese';
-    //     this.setState({
-    //         bmi: bmi,
-    //         bmiResult: this.getBmiResult(bmi)
-    //     });
-    // }
-
-    onBlur() {
-        setTimeout(() => {
+    onBlur() {  
             if (this.state.focus) {
                 this.setState({
                     focus: false
                 });
             }
-        },2);
-    }
+   }
     onFocus() {
         if (!this.state.focus) {
             this.setState({
